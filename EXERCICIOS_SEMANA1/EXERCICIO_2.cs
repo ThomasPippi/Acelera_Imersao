@@ -1,5 +1,5 @@
 using System;
-class Exercicio_1 {
+class Exercicio_2 {
   static void Main() {
       int horas_aula_prof1 = 0, horas_aula_prof2 = 0;
       double valor_hora_prof1 = 0, valor_hora_prof2 = 0, salario1 = 0, salario2 = 0;
