@@ -1,8 +1,7 @@
 using System;
 class Exercicio_1 {
   static void Main() {
-      int n1 = 0, n2 = 0, n3 = 0, n4 = 0, media = 7;
-      
+      int n1 = 0, n2 = 0, n3 = 0, n4 = 0, media = 7;      
         Console.WriteLine("Caldular média e imprimir superiores a média 7. \n");
         Console.WriteLine("Digite o valor da nota 1: ");
         n1 = int.Parse(Console.ReadLine());
