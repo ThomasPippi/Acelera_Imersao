@@ -22,7 +22,6 @@ class Exercicio_2 {
             Console.WriteLine("O professor 2 recebe mais.");
         }else{
             Console.WriteLine("Os professores recebem o mesmo valor.");
-        }
-        
+        }        
   }
 }
