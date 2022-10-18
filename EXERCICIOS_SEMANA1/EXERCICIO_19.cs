@@ -1,5 +1,5 @@
 using System;
-class HelloWorld {
+class EXERCICIO_19 {
   static void Main() {
       int i;
     for (i = 0; i < 10; i++){
