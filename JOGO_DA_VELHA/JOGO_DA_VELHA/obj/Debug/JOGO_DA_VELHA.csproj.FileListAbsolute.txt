@@ -1,0 +1,8 @@
+C:\Users\thomas.pippi\source\repos\JOGO_DA_VELHA\JOGO_DA_VELHA\bin\Debug\JOGO_DA_VELHA.exe.config
+C:\Users\thomas.pippi\source\repos\JOGO_DA_VELHA\JOGO_DA_VELHA\bin\Debug\JOGO_DA_VELHA.exe
+C:\Users\thomas.pippi\source\repos\JOGO_DA_VELHA\JOGO_DA_VELHA\bin\Debug\JOGO_DA_VELHA.pdb
+C:\Users\thomas.pippi\source\repos\JOGO_DA_VELHA\JOGO_DA_VELHA\obj\Debug\JOGO_DA_VELHA.csproj.AssemblyReference.cache
+C:\Users\thomas.pippi\source\repos\JOGO_DA_VELHA\JOGO_DA_VELHA\obj\Debug\JOGO_DA_VELHA.csproj.SuggestedBindingRedirects.cache
+C:\Users\thomas.pippi\source\repos\JOGO_DA_VELHA\JOGO_DA_VELHA\obj\Debug\JOGO_DA_VELHA.csproj.CoreCompileInputs.cache
+C:\Users\thomas.pippi\source\repos\JOGO_DA_VELHA\JOGO_DA_VELHA\obj\Debug\JOGO_DA_VELHA.exe
+C:\Users\thomas.pippi\source\repos\JOGO_DA_VELHA\JOGO_DA_VELHA\obj\Debug\JOGO_DA_VELHA.pdb
