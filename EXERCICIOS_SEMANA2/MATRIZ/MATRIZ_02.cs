@@ -1,4 +1,7 @@
-int[,] MatrizA = new int[3, 3];
+using System;
+class Matriz_02 {
+  static void Main() {
+    int[,] MatrizA = new int[3, 3];
             int[] somaLinha = new int[3];
             int[] somaColuna = new int[3];
             int i, j,  soma;
@@ -31,3 +34,5 @@ int[,] MatrizA = new int[3, 3];
                 somaColuna[j] = soma;
                 Console.WriteLine("A soma da coluna " + j + " é: " + somaColuna[j]);
             }
+  }
+}
