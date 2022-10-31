@@ -137,9 +137,12 @@ table{
 
 td{
     border-left: 1px solid white;
+    
 }
 
-
+tr, th, td{
+    padding: 0.6rem;
+}
 
 
 #espec{
@@ -161,4 +164,46 @@ h3{
 
 h4{
     margin-top: 1rem;
+}
+
+#contato{
+    padding-top: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+
+}
+
+p.contato{
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+#formulario{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+input{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 25%;
+    margin: auto;
+    background-color: transparent;
+}
+
+label{
+    margin-top: 1rem;
+    margin-bottom: .7rem;
+}
+
+input.button{
+    margin-top: 3rem;
+    margin-right: 40%;
 }
