@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: #9b9b9b;
+            color: white;
+            text-align: center;
+        }
+        .radio{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <script src="config.js"></script>
+    <title>Exercício 5</title>
+</head>
+<body>
+    <h3>Escolha os Ingredientes do seu Hamburguer</h3>
+    <div class="radio">
+    <form action="">
+    <label for="pao">Pães</label>
+    <input type="checkbox" name="pao" id="pao" onclick="ativa_botao()">
+    <label for="carne">Carne</label>
+    <input type="checkbox" name="carne" id="carne" onclick="ativa_botao()">
+    <label for="tomate">Tomates</label>
+    <input type="checkbox" name="tomate" id="tomate" onclick="ativa_botao()">
+    <label for="queijo">Queijo</label>
+    <input type="checkbox" name="queijo" id="queijo" onclick="ativa_botao()">
+    <button id="button" disabled>Pedir</button>
+    </form>
+    </div>
+</body>
+</html>
