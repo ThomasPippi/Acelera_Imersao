@@ -11,23 +11,28 @@ function desabilita(){
     document.getElementById("verificado").disabled = true;
 }
 function verificando(){
-    var usuario = document.getElementById('usuario');
+    var usuario = document.getElementById('usuario').value;
     var senha = document.getElementById('senha').value;
     var senhaV = document.getElementById('confirmaSenha').value;
-    if(usuario.value != '' && senha != '' && senhaV != ''){
-        document.getElementById('naoconfere_campos').id = 'conferido';
-        if(senha.length >= 6 && senha.length <= 10){
-            document.getElementById('naoconfere_senha').id = 'conferido';
-            if(senhaV === senha){
-                document.getElementById('naoconfere_confirmaSenha').id = 'conferido';
-                tudoVerificado();
-            }
-        }
+    if(usuario != '' && senha != '' && senhaV != ''){
+        document.getElementById('confere_campos').className = 'conferido';
     }
     else{
         desabilita();
     }
+    if(senha.length >= 6 && senha.length <= 10){
+        document.getElementById('confere_senha').className = 'conferido';
+    }
+    else{
+        document.getElementById('confere_senha').className = 'naoconferido';
+    }
       
+    if(senhaV === senha && senha != ''){
+        document.getElementById('confere_senhasenha').className = 'conferido';
+    }
+    else{
+        document.getElementById('confere_senhasenha').className = 'naoconferido';
+    }
     
 
 } 
