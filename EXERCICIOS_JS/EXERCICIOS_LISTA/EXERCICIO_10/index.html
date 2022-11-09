@@ -23,8 +23,10 @@
         <input type="radio" name="pessoa" id="cnpj" value="cnpj" class="radio" onclick="pessoaCNPJ()"><br>
         <label for="pessoa" id="trocapessoa">CPF/CNPJ:</label>
         <input type="number" name="pessoa" id="pessoa" placeholder="Somente Números" class="texto" disabled><br>
-        <label for="data_nasc" class="texto" style="display: none;" id="data">Data de Nascimento:</label>
-        <input type="number" name="data_nasc" id="data_nasc" placeholder="Apenas Números. Ex 27082003" class="texto" style="display: none;"><br>
+        <div id="nascimento" style="display: none;">
+            <label for="data_nasc" class="texto"  id="data">Data de Nascimento:</label>
+            <input type="number" name="data_nasc" id="data_nasc" placeholder="Apenas Números. Ex 27082003" class="texto"><br>
+        </div>
         <label for="endereco">Endereço:</label>
         <input type="text" name="endereco" id="endereco" placeholder="Rua André Marques 1000" class="texto"><br>
         <label for="cep">CEP:</label>
