@@ -11,45 +11,56 @@ function desabilita(){
     document.getElementById('verificado');
     document.getElementById("verificado").disabled = true;
 }
-var verificador_campos = 0;
-var verificador_senha = 0;
-var verificador_senhasenha = 0
-function verificando(){
-    var usuario = document.getElementById('usuario').value;
-    var senha = document.getElementById('senha').value;
-    var senhaV = document.getElementById('confirmaSenha').value;
-    if(usuario != '' && senha != '' && senhaV != ''){
-        document.getElementById('confere_campos').className = 'conferido';
-        verificador_campos = 1;
+
+var Verusuario = false;
+var Versenha = false;
+var Versenhasenha = false;
+function verifica_usuario(){
+    var nome = document.getElementById('usuario').value;
+    if(nome != ''){
+        Verusuario = true;
+        verificando();
     }
     else{
-        document.getElementById('confere_campos').className = 'naoconferido';
-        verificador_campos = 0;
+        Verusuario = false;
+        verificando();
     }
+}
+
+function verifica_senha(){
+    var senha = document.getElementById('senha').value;
     if(senha.length >= 6 && senha.length <= 10){
         document.getElementById('confere_senha').className = 'conferido';
-        verificador_senha = 1;
+        Versenha = true;
+        verificando();
     }
     else{
         document.getElementById('confere_senha').className = 'naoconferido';
-        verificador_senha = 0;
+        Versenha = false;
+        verificando();
     }
-      
+}
+
+function verifica_senhasenha(){
+    var senhaV = document.getElementById('confirmaSenha').value;
+    var senha = document.getElementById('senha').value;
     if(senhaV === senha && senha != ''){
         document.getElementById('confere_senhasenha').className = 'conferido';
-        verificador_senhasenha = 1;
+        Versenhasenha = true;
+        verificando();
     }
     else{
         document.getElementById('confere_senhasenha').className = 'naoconferido';
-        verificador_senhasenha = 0;
+        Versenhasenha = false;
+        verificando();
     }
-
-    if(verificador_campos == 1 && verificador_senha == 1 && verificador_senhasenha == 1){
+}
+function verificando(){
+    if(Verusuario && Versenha && Versenhasenha){
+        document.getElementById('confere_campos').className = 'conferido';
         tudoVerificado();
-    }
-    else{
+    }else{
+        document.getElementById('confere_campos').className = 'naoconferido';
         desabilita();
     }
-    
-
 } 
