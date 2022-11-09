@@ -68,21 +68,12 @@ ul{
     text-align: left;
 }
 
-li#naoconfere_campos{
-    font-style: italic;
-    opacity: 60%;
-}
-li#naoconfere_senha{
+li.naoconferido{
     font-style: italic;
     opacity: 60%;
 }
 
-li#naoconfere_confirmaSenha{
-    font-style: italic;
-    opacity: 60%;
-}
-
-li#conferido{
+li.conferido{
     font-style: italic;
     color: greenyellow;
 }
