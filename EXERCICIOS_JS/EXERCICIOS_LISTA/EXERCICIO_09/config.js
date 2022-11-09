@@ -24,7 +24,7 @@ function verificando(){
     }
     else{
         document.getElementById('confere_campos').className = 'naoconferido';
-        verificador_campos = 0
+        verificador_campos = 0;
     }
     if(senha.length >= 6 && senha.length <= 10){
         document.getElementById('confere_senha').className = 'conferido';

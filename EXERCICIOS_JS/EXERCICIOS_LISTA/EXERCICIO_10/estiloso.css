@@ -1,0 +1,29 @@
+body{
+    background-color: #bc98f3;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    font-weight: 500;
+    color: white;
+    font-size: 3rem;
+}
+.cadastramento{
+    font-weight: 500;
+    color: white;
+    font-size: 1.7rem;
+}
+input{
+    margin-top: 2rem;
+}
+input#usuario{
+    width: 20%;
+    margin: auto;
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+    padding: .5rem;
+    font-weight: 100;
+    border-radius: 15px;
+}

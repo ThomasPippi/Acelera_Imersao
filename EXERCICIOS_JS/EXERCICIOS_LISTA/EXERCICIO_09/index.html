@@ -13,13 +13,13 @@
 </head>
 <body>
     <h2>Cadastramento</h2>
-    <div class="autenticacao" onkeypress="verificando()">
+    <div class="autenticacao">
         <label for="usuario">Digite o seu Usuário:</label>
-        <input type="text" name="usuario" id="usuario" placeholder="Ex: thomas.pippi" onchange="verificando()">
+        <input type="text" name="usuario" id="usuario" placeholder="Ex: thomas.pippi" onkeyup="verificando()">
         <label for="senha">Digite sua Senha:</label>
-        <input type="password" name="senha" id="senha" placeholder="Senha aqui..." onchange="verificando()">
+        <input type="password" name="senha" id="senha" placeholder="Senha aqui..." onkeyup="verificando()">
         <label for="confirmaSenha">Confirme sua Senha:</label>
-        <input type="password" name="confirmaSenha" id="confirmaSenha" placeholder="Não vai se esquecer de mim, tá?" onchange="verificando()">
+        <input type="password" name="confirmaSenha" id="confirmaSenha" placeholder="Não vai se esquecer de mim, tá?" onkeyup="verificando()">
         <ul>
             <li id="confere_campos" class="naoconferido">Preencha todos os campos</li>
             <li id="confere_senha" class="naoconferido">Sua senha deve ter entre 6 e 10 caracteres.</li>
