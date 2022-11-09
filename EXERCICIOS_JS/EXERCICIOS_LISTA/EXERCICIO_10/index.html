@@ -15,12 +15,22 @@
     <h2>Cadastro Clientes</h2>
     <div class="cadastramento">
         <label for="usuario">Digite o seu Nome:</label>
-        <input type="text" name="usuario" id="usuario" placeholder="Ex: Giovanna Oliveira"><br>
+        <input type="text" name="usuario" id="usuario" placeholder="Ex: Giovanna Oliveira" class="texto"><br>
         <label for="pessoa">Pessoa:</label>
-        <label for="pessoa">CPF</label>
-        <input type="radio" name="cpf" id="cpf" value="CPF">
-        <label for="pessoa">CNPJ</label>
-        <input type="radio" name="cnpj" id="cnpj" value="cnpj">
+        <label for="pessoa">Física</label>
+        <input type="radio" name="pessoa" id="cpf" value="CPF" class="radio" onclick="pessoaCPF()">
+        <label for="pessoa">Jurídica</label>
+        <input type="radio" name="pessoa" id="cnpj" value="cnpj" class="radio" onclick="pessoaCNPJ()"><br>
+        <label for="pessoa" id="trocapessoa">CPF/CNPJ:</label>
+        <input type="number" name="pessoa" id="pessoa" placeholder="Somente Números" class="texto" disabled><br>
+        <label for="data_nasc" class="texto" style="display: none;" id="data">Data de Nascimento:</label>
+        <input type="number" name="data_nasc" id="data_nasc" placeholder="Apenas Números. Ex 27082003" class="texto" style="display: none;"><br>
+        <label for="endereco">Endereço:</label>
+        <input type="text" name="endereco" id="endereco" placeholder="Rua André Marques 1000" class="texto"><br>
+        <label for="cep">CEP:</label>
+        <input type="number" name="cep" id="cep" placeholder="97030-280" class="texto"><br>
+        <label for="tel">Telefone:</label>
+        <input type="number" name="tel" id="tel" placeholder="55999999999" class="texto"><br>
     </div>
 </body>
 </html>
