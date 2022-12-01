@@ -7,7 +7,7 @@ namespace EstudandoEntity
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Digite: \n" + "1 - Criar uma Pessoa\n" + "2 - Alterar o nome da Pessoa\n" + "3 - Inserir um Email\n" + "4 - Excluir uma Pessoa\n" + "5 - Consultar Tudo\n" + "6 - Consultar pelo ID");
+            Console.WriteLine("Digite: \n" + "1 - Criar uma Pessoa\n" + "2 - Alterar o nome da Pessoa\n" + "3 - Inserir um Email\n" + "4 - Excluir uma Pessoa\n" + "5 - Consultar Tudo\n" + "6 - Consultar pelo ID\n" + "7 - Consultar pelo NOME");
             int op = int.Parse(Console.ReadLine());
             Contexto contexto = new Contexto();
             switch(op)
@@ -142,6 +142,27 @@ namespace EstudandoEntity
                     {
                         Console.WriteLine(ex.Message);
                     }
+                    break;
+                case 7:
+                    try
+                    {
+                        Console.WriteLine("Informe o NOME da Pessoa: ");
+                        string nomePessoa = Console.ReadLine();
+                        Pessoa pessoa = contexto.pessoas.Include(p => p.Emails).FirstOrDefault(x => x.nome == nomePessoa);
+                        Console.WriteLine(pessoa.nome);
+                        if (pessoa.Emails != null)
+                        {
+                            foreach (Email item in pessoa.Emails)
+                            {
+                                Console.WriteLine("   " + item.email);
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                    }
+
                     break;
                 default:
                     Console.Write("Escolha uma opção válida!");
